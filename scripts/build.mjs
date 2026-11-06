@@ -11,8 +11,8 @@ const site=JSON.parse(await read('_data/site.json')),nav=JSON.parse(await read('
 const common={site_name:esc(site.name),site_description:esc(site.description),year:String(new Date().getFullYear())},includes={};
 for(const f of ['head','header','profile','footer'])includes[f]=await read('_includes/'+f+'.html');
 const layout=await read('_layouts/default.html'),papers=(await collection('_publications')).sort((a,b)=>a.meta.order-b.meta.order);
-let publications='<div class="publications">',year;
-for(const p of papers.filter(p=>!p.meta.manuscript)){if(year!==p.meta.year){year=p.meta.year;publications+='<h2 class="publication-year">'+esc(year)+'</h2>';}publications+='<article id="'+esc(p.meta.id)+'">'+p.body+'</article>';}
+let publications='<div class="publications">';
+for(const p of papers.filter(p=>!p.meta.manuscript)){publications+='<article id="'+esc(p.meta.id)+'">'+p.body+'</article>';}
 publications+='</div>';const manuscripts=papers.filter(p=>p.meta.manuscript);if(manuscripts.length)publications+='<h2>Submitted manuscript</h2>'+manuscripts.map(p=>'<article class="manuscript" id="'+esc(p.meta.id)+'">'+p.body+'</article>').join('');
 let pages=await collection('_pages');
 if(site.researchPublished){const gallery=parse(await read('_drafts/research-gallery.html'));pages=pages.filter(p=>p.meta.nav!=='research');pages.push(gallery,...(await collection('_research')).filter(p=>p.meta.published));}
