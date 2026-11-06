@@ -10,10 +10,10 @@ async function collection(d){return Promise.all((await fs.readdir(path.join(root
 const site=JSON.parse(await read('_data/site.json')),nav=JSON.parse(await read('_data/navigation.json'));
 const common={site_name:esc(site.name),site_description:esc(site.description),year:String(new Date().getFullYear())},includes={};
 for(const f of ['head','header','profile','footer'])includes[f]=await read('_includes/'+f+'.html');
-const layout=await read('_layouts/default.html'),papers=(await collection('_publications')).sort((a,b)=>a.meta.order-b.meta.order);
-let publications='<div class="publications">';
-for(const p of papers.filter(p=>!p.meta.manuscript)){publications+='<article id="'+esc(p.meta.id)+'">'+p.body+'</article>';}
-publications+='</div>';const manuscripts=papers.filter(p=>p.meta.manuscript);if(manuscripts.length)publications+='<h2>Submitted manuscript</h2>'+manuscripts.map(p=>'<article class="manuscript" id="'+esc(p.meta.id)+'">'+p.body+'</article>').join('');
+const layout=await read('_layouts/default.html'),papers=(await collection('_publications')).sort((a,b)=>b.meta.year-a.meta.year||a.meta.order-b.meta.order);
+let publications='<div class="publications">',publicationNumber=papers.length;
+for(const p of papers){publications+='<article id="'+esc(p.meta.id)+'">'+p.body.replace('<h3>','<h3>'+ (publicationNumber--)+'. ')+'</article>';}
+publications+='</div>';
 let pages=await collection('_pages');
 if(site.researchPublished){const gallery=parse(await read('_drafts/research-gallery.html'));pages=pages.filter(p=>p.meta.nav!=='research');pages.push(gallery,...(await collection('_research')).filter(p=>p.meta.published));}
 if(site.postsPublished)for(const p of (await collection('_posts')).filter(p=>p.meta.published)){p.body=render(await read('_layouts/post.html'),{content:p.body,post_date:esc(p.meta.date)});pages.push(p);}

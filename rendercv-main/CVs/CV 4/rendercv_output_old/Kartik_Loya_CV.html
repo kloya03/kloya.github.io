@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        
+    </title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css"
+        integrity="sha512-Pmhg2i/F7+5+7SsdoUqKeH7UAZoVMYb1sxGOoJ0jWXAEHP0XV2H4CITyK267eHWp2jpj7rtqWNkmEOw1tNyYpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.css" integrity="sha384-PDbUeNCuE6bOPudPOgFyIUEy3UJawJVwr3XlGO90FIuf5qNIoTLSgOJo/dC2ZXV/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.js" integrity="sha384-VkqWq8xtm5YQk1BBXczQ8/Sx+DlCzF8cuS43bZwmtVXzRFtyLTqTCdP7MKmKo+KN" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {delimiters: [{ left: '$$',  right: '$$',  display: false }]});"></script>
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="markdown-body">
+        <h1>Kartik Loya's CV</h1>
+        <ul>
+        <li>Email: <a href="mailto:Kloya@clemson.edu">Kloya@clemson.edu</a></li>
+        <li>Location: Clemson, SC, USA</li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/kartikloya">kartikloya</a></li>
+        <li>GitHub: <a href="https://github.com/kloya03">kloya03</a></li>
+        </ul>
+        <h1>Summary</h1>
+        <p>Ph.D. in Mechanical Engineering with hands-on experience in robotics, dynamics, perception, and control. I build and test robotic systems, combining sensing, physics-based modeling, and learning-based methods to develop reliable autonomy for real-world environments. My work spans system identification, state estimation, planning, and real-time control, with a growing interest in Physical AI, reinforcement learning, and learning-based approaches for intelligent robotic behavior.</p>
+        <h1>Research Experience</h1>
+        <h2><strong>Graduate Research Assistant</strong>, Virtual Prototyping of Ground Vehicle Systems Center (VIPR-GS) -- Clemson, SC, USA</h2>
+        <p>Sept 2024 – present</p>
+        <p>Advisor: Prof. Phanindra Tallapragada</p>
+        <ul>
+        <li>
+        <p>Developed a physics-informed machine learning framework for off-road autonomy on deformable terrain, learning fast vehicle-dynamics predictors from large-scale simulation data for real-time control.</p>
+        </li>
+        <li>
+        <p>Built terrain-specific dynamics models using scalable Koopman identification, demonstrating strong performance degradation across unseen soil conditions and motivating terrain-adaptive learning and control.</p>
+        </li>
+        <li>
+        <p>Integrated learned dynamics with constrained MPC for aggressive trajectory tracking under steering and torque limits, achieving real-time control at 0.085s per optimization step.</p>
+        </li>
+        <li>
+        <p>Currently deploying the framework on a 1/10th-scale autonomous off-road vehicle, integrating depth camera, wheel encoders, IMU, and GPS for onboard perception, state estimation, terrain-aware modeling, and closed-loop control.</p>
+        </li>
+        </ul>
+        <h2><strong>Graduate Research Assistant</strong>, Applied Dynamical Systems Lab -- Clemson, SC, USA</h2>
+        <p>Aug 2021 – May 2024</p>
+        <p>Advisor: Prof. Phanindra Tallapragada</p>
+        <ul>
+        <li>
+        <p>Designed, built, and field-tested a fish-like underwater robot in pool and lake environments, integrating BLDC internal-rotor propulsion, servo-actuated flexible tail, IMU, pressure sensors, GPS, onboard compute, and overhead vision-based marker tracking for localization and state estimation.</p>
+        </li>
+        <li>
+        <p>Developed a physics-based nonlinear simulator capturing hydrodynamics, underactuation, and coupled body–tail dynamics for scalable data generation, system identification, and controller development.</p>
+        </li>
+        <li>
+        <p>Studied roll stability of the bio-inspired fish robot, showing how periodic body motion and fluid interaction can amplify roll oscillations and identifying operating conditions that affect stability.</p>
+        </li>
+        <li>
+        <p>Built sim-to-real learning pipelines using Koopman learning and differentiable reinforcement learning (RL), combining large-scale simulation with limited real-world data to learn transferable dynamics models and control policies.</p>
+        </li>
+        <li>
+        <p>Developed online model adaptation that selectively incorporates informative streaming sensor data, enabling efficient learning across changing dynamical regimes while reducing redundant data and computation.</p>
+        </li>
+        <li>
+        <p>Deployed real-time MPC and learned controllers on the physical robot, with low-level BLDC motor and servo control, achieving speeds up to 2 body lengths/s and 1.8–6.3 cm cross-track RMSE in closed-loop trajectory tracking.</p>
+        </li>
+        </ul>
+        <h2><strong>Graduate Research Assistant</strong>, Virtual Prototyping of Ground Vehicle Systems Center (VIPR-GS) -- Clemson, SC, USA</h2>
+        <p>Jan 2020 – Aug 2021</p>
+        <p>Advisor: Dr. Mohammad Naghnaeian</p>
+        <ul>
+        <li>
+        <p>Designed energy-efficient planning and control strategies for UAV fleets in resource-constrained environments.</p>
+        </li>
+        <li>
+        <p>Used MPC to enhance UAV energy efficiency, factoring in disturbances, wind effects, and morphed UAV for improved performance.</p>
+        </li>
+        </ul>
+        <h1>Skills</h1>
+        <p><strong>Programming:</strong> Python, MATLAB, C++</p>
+        <p><strong>Robotics &amp; Machine Learning:</strong> ROS, ROS2, PyTorch, OpenCV, Isaac Sim, MuJoCo</p>
+        <p><strong>Simulation &amp; Optimization:</strong> Project Chrono, CasADi, IPOPT, GPOPS-II, Mathematica, SolidWorks</p>
+        <p><strong>Embedded Computing:</strong> Linux, Git, Docker, Raspberry Pi, Radxa, NVIDIA Jetson Nano, ESP32</p>
+        <p><strong>Sensors &amp; Perception:</strong> IMU, GPS, LiDAR, RGB/depth cameras, DepthAI OAK, Intel RealSense, pressure sensors, wheel encoders</p>
+        <p><strong>Actuation &amp; Communication:</strong> BLDC motors, servo motors, Tinymovr motor drivers, encoder feedback, CAN, UART, I2C, SPI, RF communication</p>
+        <h1>Work Experience</h1>
+        <h2><strong>Engineering Intern</strong>, Thermax Ltd. -- Pune, India</h2>
+        <p>Oct 2017 – May 2018</p>
+        <ul>
+        <li>
+        <p>Surveyed and optimized the steel utilization in the plant.</p>
+        </li>
+        <li>
+        <p>Developed a Python program for remote online performance analysis for the Vapour Absorption chiller plants.</p>
+        </li>
+        <li>
+        <p>Capstone Project: Design and manufacturing of boiler panel cutting machine to replace the existing flame cutting method used in repairing boilers to avoid the development of heat-affected zones.</p>
+        </li>
+        </ul>
+        <h2><strong>Engineering Intern</strong>, Elite Techno Group -- Pune, India</h2>
+        <p>June 2016 – June 2016</p>
+        <ul>
+        <li>
+        <p>Designed ATV on Solidworks and performed crash analysis on it.</p>
+        </li>
+        <li>
+        <p>Manufactured the ATV and tested its performance on a road-track.</p>
+        </li>
+        </ul>
+        <h1>Education</h1>
+        <h2><strong>Clemson University</strong>, Ph.D. in Mechanical Engineering -- Clemson, SC, USA</h2>
+        <p>2021 - 2026 (expected)</p>
+        <ul>
+        <li>GPA: 4.00/4.00</li>
+        </ul>
+        <h2><strong>Clemson University</strong>, M.S. in Mechanical Engineering -- Clemson, SC, USA</h2>
+        <p>Jan 2018 – Jan 2021</p>
+        <ul>
+        <li>GPA: 3.87/4.00.</li>
+        </ul>
+        <h2><strong>Maharashtra Institute of Technology, Pune University</strong>, B.E. in Mechanical Engineering -- Pune, India</h2>
+        <p>Jan 2014 – Jan 2018</p>
+        <h1>Competitions</h1>
+        <h2><strong>AI for Industry Challenge - Intrinsic × Open Robotics</strong> -- <strong>Team ASIMOV</strong></h2>
+        <p>May 2026 – Aug 2026</p>
+        <ul>
+        <li>
+        <p>Ranked 21st globally and advanced to Phase 1 (Top 30 of 160+ teams) in a worldwide robotics competition focused on autonomous manipulation of deformable cables and precision connector insertion.</p>
+        </li>
+        <li>
+        <p>Developed the manipulation solution using Intrinsic Flowstate, integrating Vision-Language-Action (VLA) models, reinforcement learning, and OpenCV-based perception for task planning, visual understanding, and robot control.</p>
+        </li>
+        <li>
+        <p>Designed and tested reusable robot skills for perception and manipulation within the Flowstate workflow, combining learning-based approaches with task-specific robotic behaviors.</p>
+        </li>
+        </ul>
+        <h2><strong>iGRADS (Graduate Research and Discovery Symposium)</strong></h2>
+        <p>Mar 2026 – Apr 2026</p>
+        <ul>
+        <li>Advanced to the final round of Clemson’s university-wide graduate research competition, presenting doctoral research to a broad, nontechnical audience.</li>
+        </ul>
+        <h1>Honors and Awards</h1>
+        <h2><strong>ME Excellence Award - Ph.D.</strong> -- <strong>Clemson University</strong></h2>
+        <p>Apr 2026</p>
+        <ul>
+        <li>Recognized by the Department of Mechanical Engineering for excellence as a Ph.D. graduate student.</li>
+        </ul>
+        <h2><strong>Graduate Travel Grant</strong> -- <strong>Clemson Graduate Student Government</strong></h2>
+        <p>Jan 2024</p>
+        <ul>
+        <li>Awarded competitive graduate travel funding to attend the IEEE International Conference on Robotics and Automation (ICRA 2024).</li>
+        </ul>
+        <h1>Selected_Publications</h1>
+        <h2><strong>Learning Koopman operators for path tracking by a fish-like robot</strong></h2>
+        <p><em>Kartik Loya</em>, P. Tallapragada</p>
+        <p>(Submitted to IEEE Transactions on Robotics)</p>
+        <h2><strong>Differentiable Reinforcement Learning for Path Tracking by an Agile Fish-Like Robot</strong></h2>
+        <p>Jan 2026</p>
+        <p><em>Kartik Loya</em>, P. Chivkula, R. Varikuti, P. Tallapragada</p>
+        <p>(IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS))</p>
+        <h2><strong>Koopman Operator Framework for Modeling and Control of Off-Road Vehicle on Deformable Terrain</strong></h2>
+        <p>Jan 2025</p>
+        <p><em>Kartik Loya</em>, P. Tallapragada</p>
+        <p>(ASME Journal of Autonomous Vehicles and Systems (JAVS))</p>
+        <h2><strong>Agile 3-D Motion Primitives in an Underactuated Fish-like Robot</strong></h2>
+        <p>Jan 2025</p>
+        <p>P. Chivkula, <em>Kartik Loya</em>, P. Tallapragada</p>
+        <p>(IEEE Robotics and Automation - Letters)</p>
+        <h1>Talks and Presentations</h1>
+        <ul>
+        <li>
+        <p><strong>Modeling, Estimation and control Conference (MECC)</strong> — 2022: "Stabilization of an Inverted Pendulum on a Nonholonomic System"</p>
+        </li>
+        <li>
+        <p><strong>Modeling, Estimation and control Conference (MECC)</strong> — 2023: "Koopman Operator Based Predictive Control With a Data Archive of Observables"</p>
+        </li>
+        <li>
+        <p><strong>Modeling, Estimation and control Conference (MECC)</strong> — 2024: "Online learning of Koopman operator using streaming data from different dynamical regimes"</p>
+        </li>
+        <li>
+        <p><strong>SIAM Conference on Applications of Dynamical Systems (DS25)</strong> — Talk: Model-based learning of Koopman operator for complex mechanical systems (May 2025).</p>
+        </li>
+        <li>
+        <p><strong>ISTVS 2025 (55th Conference)</strong> — Talk: Data-driven Koopman control-oriented learning framework for improved autonomous off-road mobility (Oct 9, 2025).</p>
+        </li>
+        <li>
+        <p><strong>ICRA 2025</strong> — Poster: "Batch learning/updates of Koopman operators from streaming off-road vehicle data with terrain dynamics" (Summer 2025).</p>
+        </li>
+        <li>
+        <p><strong>ICRA 2025</strong> — Late Breaking Results: "Learning PID Gains for Planar Tracking of Bio-Inspired Swimming Robots Using Simplified Models"</p>
+        </li>
+        <li>
+        <p><strong>Clemson VIPR Annual Meeting 2025</strong> — Poster Presentation: "Koopman-Based Modelling and Control of Off-Road Vehicles on Deformable Terrain"</p>
+        </li>
+        <li>
+        <p><strong>Clemson Graduate Student Seminar (GSR)</strong> — Research talk: 2023 "Parametric Roll Oscillation of a Hydrodynamic Chaplygin Sleigh"</p>
+        </li>
+        <li>
+        <p><strong>Clemson Graduate Student Seminar (GSR)</strong> — Research talk: 2025 "Data-driven Koopman Control-Oriented Learning Framework for Improved Autonomous Off-road Mobility."</p>
+        </li>
+        </ul>
+    </article>
+</body>
+
+</html>
