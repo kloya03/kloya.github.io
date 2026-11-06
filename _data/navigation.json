@@ -1,0 +1,22 @@
+[
+  {
+    "label": "About",
+    "url": "index.html",
+    "key": "about"
+  },
+  {
+    "label": "Publications",
+    "url": "publications.html",
+    "key": "publications"
+  },
+  {
+    "label": "Research",
+    "url": "research.html",
+    "key": "research"
+  },
+  {
+    "label": "CV",
+    "url": "cv.html",
+    "key": "cv"
+  }
+]
