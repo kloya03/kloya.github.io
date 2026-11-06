@@ -93,10 +93,11 @@
 #connections(
   [Clemson, SC, USA],
   [#link("mailto:Kloya@clemson.edu", icon: false, if-underline: false, if-color: false)[Kloya\@clemson.edu]],
-  [#link("https://linkedin.com/in/kartikloya", icon: false, if-underline: false, if-color: false)[linkedin.com\/in\/kartikloya]],
-  [#link("https://github.com/kloya03", icon: false, if-underline: false, if-color: false)[github.com\/kloya03]],
+  [#link("https://linkedin.com/in/kartikloya", icon: false, if-underline: false, if-color: false)[#box(baseline: 15%)[#image("icons/linkedin.svg", height: 0.9em)] #h(0.15em) LinkedIn]],
+  [#link("https://github.com/kloya03", icon: false, if-underline: false, if-color: false)[#box(baseline: 15%)[#image("icons/github.svg", height: 0.9em)] #h(0.15em) GitHub]],
+  [#link("https://scholar.google.com/citations?user=sKZu4_EAAAAJ&hl=en", icon: false, if-underline: false, if-color: false)[#box(baseline: 15%)[#image("icons/google-scholar.svg", height: 0.9em)] #h(0.15em) Google Scholar]],
+  [#link("https://kloya03.github.io/kloya.github.io/", icon: false, if-underline: false, if-color: false)[#box(baseline: 15%)[#image("icons/website.svg", height: 0.9em)] #h(0.15em) kloya03.github.io]],
 )
-
 
 == Summary
 
